@@ -11,7 +11,8 @@ import {
   LineChart,
   Line
 } from 'recharts';
-import { Table, BarChart3, PieChart, Info, Users } from 'lucide-react';
+// import { Table, BarChart3, PieChart, Info, Users } from 'lucide-react';
+import { Table, BarChart3, Info, Users } from 'lucide-react';
 
 const RAW_DATA = `報名序號,應試號碼,國文級分,英文級分,數學A級分,數學B級分,社會級分,自然級分
 93030101,11327307,13,5,-,3,13,-
