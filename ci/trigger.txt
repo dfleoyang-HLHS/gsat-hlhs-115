@@ -1,0 +1,5 @@
+Trigger CI rebuild
+
+This file was added automatically to trigger GitHub Actions after fixing TSX issues in src/components/Benchmarks.tsx.
+
+Timestamp: 2026-08-06T04:20:00Z
