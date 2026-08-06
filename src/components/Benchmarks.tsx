@@ -119,7 +119,7 @@ export default function Benchmarks({ students }: { students: Student[] }) {
 
       <div style={{ marginBottom: 12, display: 'flex', gap: 8, alignItems: 'center' }}>
         <label style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
-          <input type="radio" checked={viewMode === 'cumulative'} onChange={() => setViewMode('cumulative')} /> 累積 (>= 標準)
+          <input type="radio" checked={viewMode === 'cumulative'} onChange={() => setViewMode('cumulative')} /> 累積 ({'>='} 標準)
         </label>
         <label style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
           <input type="radio" checked={viewMode === 'exclusive'} onChange={() => setViewMode('exclusive')} /> 互斥分組
@@ -189,15 +189,15 @@ export default function Benchmarks({ students }: { students: Student[] }) {
         {/* 四科組合統計 */}
         <div style={{ border: '1px solid #eee', padding: 10, borderRadius: 8 }}>
           <strong>四科組合：均標相關統計</strong>
-          <p style={{ marginTop: 6, marginBottom: 12, color: '#555' }}>針對常用兩個組合同時計算： (1) 四科總分 >= 均標總和 的人數；(2) 四科每科皆達均標 的人數。</p>
+          <p style={{ marginTop: 6, marginBottom: 12, color: '#555' }}>針對常用兩個組合同時計算：(1) 四科總分 {'>='} 均標總和 的人數；(2) 四科每科皆達均標的人數。</p>
 
           <table style={{ width: '100%', marginTop: 8, borderCollapse: 'collapse' }}>
             <thead>
               <tr>
                 <th style={{ textAlign: 'left', padding: 6, borderBottom: '1px solid #f3f3f3' }}>組合</th>
                 <th style={{ textAlign: 'right', padding: 6, borderBottom: '1px solid #f3f3f3' }}>均標總和</th>
-                <th style={{ textAlign: 'right', padding: 6, borderBottom: '1px solid #f3f3f3' }}>總分 >= 均標總和 (人數)</th>
-                <th style={{ textAlign: 'right', padding: 6, borderBottom: '1px solid #f3f3f3' }}>各科皆 >= 均標 (人數)</th>
+                <th style={{ textAlign: 'right', padding: 6, borderBottom: '1px solid #f3f3f3' }}>總分 {'>='} 均標總和 (人數)</th>
+                <th style={{ textAlign: 'right', padding: 6, borderBottom: '1px solid #f3f3f3' }}>各科皆 {'>='} 均標 (人數)</th>
               </tr>
             </thead>
             <tbody>
